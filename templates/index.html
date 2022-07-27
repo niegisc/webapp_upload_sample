@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>File upload</h1>
+	<form method="post" enctype="multipart/form-data">
+	  <input type="file" name="photo" />
+	  <input type="submit" />
+	</form>
+	{% for image in images %}
+	  <img src="photos/{{ image }}" />
+	{% endfor %}  
+  </body>
+</html>
